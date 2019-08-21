@@ -139,6 +139,7 @@ sup {
   z-index: 200;
   background: #FFF;
   box-shadow: 0 12px 40px rgba(71,161,77,0.1);
+  overflow: hidden;
 }
 .header a.logotype {
   display: block;
@@ -201,8 +202,6 @@ sup {
 .header a.phone:hover {
   color: #00830e;
 }
-
-
 @keyframes shadow-pulse
   {
   0% {
@@ -212,9 +211,6 @@ sup {
     box-shadow: 0 0 0 35px rgba(155, 210, 25, 0);
   }
 }
-
-
-
 @media (max-width: 991px) {
   .header a.phone {
     width: 28px;
@@ -258,6 +254,7 @@ sup {
 .cover .features {
   position: absolute;
   width: 50%;
+  min-width: 375px;
   height: 100px;
   right: 0;
   margin: 450px 0 0;
@@ -273,6 +270,32 @@ sup {
 }
 .cover .delay {
   animation-delay: 1s;
+}
+@media (max-width: 991px) {
+  .cover,
+  .cover .container,
+  .cover .row {
+    height: 100vh;
+  }
+  .cover {
+    padding: 0;
+  }
+  .cover h1 {
+    margin: 0 0 70px;
+    text-align: center;
+  }
+  .cover .case {
+    position: relative;
+    height: 230px;
+    top: 50%;
+    margin: -90px 0 0;
+  }
+  .cover .delay {
+    text-align: center;
+  }
+  .cover .delay .btn.pulse {
+    float: none;
+  }
 }
 
 
