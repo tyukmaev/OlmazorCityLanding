@@ -163,6 +163,14 @@ sup {
   padding: 0 0 36px;
   font-size: 14px;
 }
+@media (max-width: 1200px) {
+  .header ul.nav {
+    padding: 0 20px;
+  }
+  .header ul.nav li a {
+    font-size: 13px;
+  }
+}
 .header ul.nav li a:before {
   display: block;
   width: 100%;
@@ -192,8 +200,18 @@ sup {
 .header a.phone:hover {
   color: #00830e;
 }
-
-.navbar {
+@media (max-width: 991px) {
+  .header a.phone {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    font-size: 0px;
+    overflow: hidden;
+    color: transparent;
+    background-size: 100%;
+  }
+}
+.header .navbar {
   padding: 0;
 }
 .navbar-dark .navbar-toggler-icon {
