@@ -229,6 +229,7 @@ sup {
 }
 
 
+
 /*COVER*/
 
 .cover {
@@ -251,26 +252,6 @@ sup {
   margin: 12px 0 0 40px;
   color: #FFF;
 }
-.cover .features {
-  position: absolute;
-  width: 50%;
-  min-width: 375px;
-  height: 100px;
-  right: 0;
-  margin: 450px 0 0;
-  padding: 0 0 0 40px;
-  background: #F7F8F3;
-  animation-delay: 0.6s;
-}
-.cover .features span {
-  display: block;
-  float: left;
-  margin: 26px 75px 0 0;
-  animation-delay: 0.6s;
-}
-.cover .delay {
-  animation-delay: 1s;
-}
 @media (max-width: 991px) {
   .cover,
   .cover .container,
@@ -290,20 +271,16 @@ sup {
     height: 220px;
     top: 50%;
     margin: -170px auto 0;
-  }
-  .cover .delay {
     text-align: center;
-    animation-delay: 0s;
   }
-  .cover .delay .btn.pulse {
+  .cover .case .btn.pulse {
     float: none;
     margin: 0 40px;
   }
-  .cover .delay .btnline {
+  .cover .case .btnline {
     margin: 20px 0 0 0;
   }
 }
-
 
 
 
@@ -376,4 +353,20 @@ sup {
 }
 .records .item.delay04 {
   animation-delay: 0.4s;
+}
+@media (max-width: 991px) {
+  .records .item .image {
+    display: none;
+  }
+  .records .item .box {
+    height: 170px;
+  }
+  .records .item .box.inv {
+    background: #47A14D;
+  }
+  .records .item .box span.second,
+  .records .item .box.inv span.second {
+    margin: 10px 0 0;
+    opacity: 1;
+  }
 }
