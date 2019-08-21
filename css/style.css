@@ -147,6 +147,7 @@ sup {
   height: 35px;
   margin: 15px 0;
   background: url(../img/logotype.svg) no-repeat center;
+  background-size: 100%;
 }
 .header ul.nav {
   width: 100%;
