@@ -363,6 +363,7 @@ sup {
   }
   .records .item .box {
     height: 170px;
+    transition: all 0.3s;
   }
   .records .item .box.inv {
     background: #47A14D;
