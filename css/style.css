@@ -293,6 +293,7 @@ sup {
   }
   .cover .delay {
     text-align: center;
+    animation-delay: 0s;
   }
   .cover .delay .btn.pulse {
     float: none;
