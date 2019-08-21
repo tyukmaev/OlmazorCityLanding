@@ -288,6 +288,7 @@ sup {
 
 .records {
   animation-delay: 1s;
+  margin: 0 0 600px;
 }
 .records .row {
   margin-left: 0;
