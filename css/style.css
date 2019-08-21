@@ -356,7 +356,7 @@ sup {
 }
 @media (max-width: 991px) {
   .records {
-    animation-delay: 0.1s;
+    animation-delay: 0s;
   }
   .records .item .image {
     display: none;
@@ -371,5 +371,11 @@ sup {
   .records .item .box.inv span.second {
     margin: 10px 0 0;
     opacity: 1;
+  }
+  .records .item.delay01,
+  .records .item.delay02,
+  .records .item.delay03,
+  .records .item.delay04 {
+    animation-delay: 0s;
   }
 }
