@@ -355,6 +355,9 @@ sup {
   animation-delay: 0.4s;
 }
 @media (max-width: 991px) {
+  .records {
+    animation-delay: 0.1s;
+  }
   .records .item .image {
     display: none;
   }
