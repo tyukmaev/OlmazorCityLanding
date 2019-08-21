@@ -152,7 +152,7 @@ sup {
 .header ul.nav {
   width: 100%;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 40px;
   justify-content: space-around;
   list-style: none;
 }
@@ -166,7 +166,7 @@ sup {
 }
 @media (max-width: 1200px) {
   .header ul.nav {
-    padding: 0 20px;
+    padding: 0 30px;
   }
   .header ul.nav li a {
     font-size: 13px;
@@ -231,9 +231,6 @@ sup {
 .header .navbar {
   padding: 0;
 }
-.navbar-dark .navbar-toggler-icon {
-  background: #999;
-}
 
 
 /*COVER*/
@@ -248,7 +245,7 @@ sup {
   animation-delay: 0.5s;
 }
 .cover h1 {
-  margin: 160px 0 70px;
+  margin: 150px 0 70px;
   color: #FFF;
 }
 .cover .btn {
