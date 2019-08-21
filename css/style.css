@@ -281,20 +281,25 @@ sup {
     padding: 0;
   }
   .cover h1 {
-    margin: 0 0 70px;
+    margin: 0 0 50px;
     text-align: center;
   }
   .cover .case {
     position: relative;
-    height: 230px;
+    width: 350px;
+    height: 220px;
     top: 50%;
-    margin: -90px 0 0;
+    margin: -170px auto 0;
   }
   .cover .delay {
     text-align: center;
   }
   .cover .delay .btn.pulse {
     float: none;
+    margin: 0 40px;
+  }
+  .cover .delay .btnline {
+    margin: 20px 0 0 0;
   }
 }
 
