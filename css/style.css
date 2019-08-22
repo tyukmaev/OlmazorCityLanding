@@ -249,6 +249,9 @@ sup {
   #header ul.nav li a:before {
     display: none;
   }
+  #header ul.nav li a.active {
+    color: #144735;
+  }
 }
 
 
