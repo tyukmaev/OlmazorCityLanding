@@ -48,7 +48,7 @@ a:hover {
 }
 .btn:hover {
   color: #FFF;
-  background: #00830e;
+  background: #47a14d;
   box-shadow: 0 12px 40px rgba(71,161,77,0.2);
 }
 @keyframes pulse {
@@ -109,7 +109,7 @@ a:hover {
 .btnline:hover:after {
   width: 80%;
   height: 4px;
-  background: #00830e;
+  background: #47a14d;
 }
 h1 {
   font-size: 44px;
@@ -132,16 +132,15 @@ sup {
 
 /*HEADER*/
 
-.header {
+#header {
   position: fixed;
   width: 100%;
   min-height: 70px;
   z-index: 200;
   background: #FFF;
   box-shadow: 0 12px 40px rgba(71,161,77,0.1);
-  overflow: hidden;
 }
-.header a.logotype {
+#header a.logotype {
   display: block;
   float: left;
   width: 170px;
@@ -150,30 +149,30 @@ sup {
   background: url(../img/logotype.svg) no-repeat center;
   background-size: 100%;
 }
-.header ul.nav {
+#header ul.nav {
   width: 100%;
   margin: 0 auto;
   padding: 0 40px;
   justify-content: space-around;
   list-style: none;
 }
-.header ul.nav li {
+#header ul.nav li {
   display: inline;
 }
-.header ul.nav li a {
+#header ul.nav li a {
   display: inline-block;
   padding: 0 0 36px;
   font-size: 14px;
 }
 @media (max-width: 1200px) {
-  .header ul.nav {
+  #header ul.nav {
     padding: 0 30px;
   }
-  .header ul.nav li a {
+  #header ul.nav li a {
     font-size: 13px;
   }
 }
-.header ul.nav li a:before {
+#header ul.nav li a:before {
   display: block;
   width: 100%;
   height: 4px;
@@ -182,14 +181,14 @@ sup {
   background: #FFF;
   transition: all 0.3s;
 }
-.header ul.nav li a.active {
+#header ul.nav li a.active {
   color: #9BD219;
 }
-.header ul.nav li a.active:before {
+#header ul.nav li a.active:before {
   width: 100%;
   background: #9BD219;
 }
-.header a.phone {
+#header a.phone {
   display: block;
   float: right;
   margin: 0 0 0 0;
@@ -199,7 +198,7 @@ sup {
   letter-spacing: 0.05em;
   background: url(../img/icon-phone.svg) no-repeat center left;
 }
-.header a.phone:hover {
+#header a.phone:hover {
   color: #00830e;
 }
 @keyframes shadow-pulse
@@ -211,8 +210,24 @@ sup {
     box-shadow: 0 0 0 35px rgba(155, 210, 25, 0);
   }
 }
+#header .navbar {
+  padding: 0;
+}
+#header .navbar-toggler {
+  width: 24px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  background: url(../img/icon-menu.svg) no-repeat center;
+  border-radius: 0;
+  outline: none;
+}
 @media (max-width: 991px) {
-  .header a.phone {
+  #header a.phone {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 24px 60px 0 0px;
     width: 28px;
     height: 28px;
     padding: 0;
@@ -223,9 +238,17 @@ sup {
     border-radius: 100px;
     animation: shadow-pulse 1s infinite;
   }
-}
-.header .navbar {
-  padding: 0;
+  #header ul.nav {
+    padding: 0 0 20px;
+  }
+  #header ul.nav li a {
+    padding: 0 0 0 40px;
+    line-height: 80px;
+    font-size: 16px;
+  }
+  #header ul.nav li a:before {
+    display: none;
+  }
 }
 
 
@@ -286,19 +309,18 @@ sup {
 
 /*RECORDS*/
 
-.records {
+#records {
   animation-delay: 1s;
-  margin: 0 0 600px;
 }
-.records .row {
+#records .row {
   margin-left: 0;
   margin-right: 0;
 }
-.records .col-md-3 {
+#records .col-md-3 {
   padding-left: 0;
   padding-right: 0;
 }
-.records .item .box {
+#records .item .box {
   height: 200px;
   padding: 40px;
   background: #9BD219;
@@ -306,78 +328,85 @@ sup {
   transition: all 0.7s;
   color: #FFF;
 }
-.records .item:hover .box {
+#records .item:hover .box {
   height: 480px;
   background: #47A14D;
 }
-.records .item .image {
+#records .item .image {
   height: 280px;
   overflow: hidden;
   transition: all 0.7s;
 }
-.records .item:hover .image {
+#records .item:hover .image {
   height: 0px;
 }
-.records .item .box span {
+#records .item .box span {
   display: block;
   transition: all 0.3s;
 }
-.records .item .box span.second sup {
+#records .item .box span.second sup {
   font-size: 16px;
 }
-.records .item .box span.second {
+#records .item .box span.second {
   margin: 80px 0 0;
   font-family: 'EuclidLight';
   font-size: 30px;
   opacity: 0;
   transition: all 0.9s;
 }
-.records .item .box.inv span.second {
+#records .item .box.inv span.second {
   margin: 280px 0 0;
 }
-.records .item:hover .box span.second {
+#records .item:hover .box span.second {
   margin: 330px 0 0;
   opacity: 1;
 }
-.records .more {
+#records .more {
   padding: 35px 0 80px;
   text-align: center;
 }
-.records .item.delay01 {
+#records .item.delay01 {
   animation-delay: 0.1s;
 }
-.records .item.delay02 {
+#records .item.delay02 {
   animation-delay: 0.2s;
 }
-.records .item.delay03 {
+#records .item.delay03 {
   animation-delay: 0.3s;
 }
-.records .item.delay04 {
+#records .item.delay04 {
   animation-delay: 0.4s;
 }
 @media (max-width: 991px) {
-  .records {
+  #records {
     animation-delay: 0s;
   }
-  .records .item .image {
+  #records .item .image {
     display: none;
   }
-  .records .item .box {
+  #records .item .box {
     height: 170px;
     transition: all 0.3s;
   }
-  .records .item .box.inv {
+  #records .item .box.inv {
     background: #47A14D;
   }
-  .records .item .box span.second,
-  .records .item .box.inv span.second {
+  #records .item .box span.second,
+  #records .item .box.inv span.second {
     margin: 10px 0 0;
     opacity: 1;
   }
-  .records .item.delay01,
-  .records .item.delay02,
-  .records .item.delay03,
-  .records .item.delay04 {
+  #records .item.delay01,
+  #records .item.delay02,
+  #records .item.delay03,
+  #records .item.delay04 {
     animation-delay: 0s;
   }
+}
+
+
+
+#infra,
+#review {
+  height: 1000px;
 }
