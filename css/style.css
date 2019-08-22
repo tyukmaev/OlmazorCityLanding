@@ -135,7 +135,7 @@ sup {
 #header {
   position: fixed;
   width: 100%;
-  min-height: 70px;
+  min-height: 95px;
   z-index: 200;
   background: #FFF;
   box-shadow: 0 12px 40px rgba(71,161,77,0.1);
@@ -145,7 +145,7 @@ sup {
   float: left;
   width: 170px;
   height: 35px;
-  margin: 20px 0;
+  margin: 30px 0;
   background: url(../img/logotype.svg) no-repeat center;
   background-size: 100%;
 }
@@ -227,7 +227,7 @@ sup {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 24px 60px 0 0px;
+    margin: 34px 60px 0 0px;
     width: 28px;
     height: 28px;
     padding: 0;
