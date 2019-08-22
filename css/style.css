@@ -236,14 +236,14 @@ sup {
   margin: 9px 0 0;
 }
 
-#header .navbar-toggler[aria-expanded="true"] span.top {
+#header .navbar-toggler.open span.top {
   transform: rotate(45deg);
   margin: 0;
 }
-#header .navbar-toggler[aria-expanded="true"] span.middle {
+#header .navbar-toggler.open span.middle {
   width: 0;
 }
-#header .navbar-toggler[aria-expanded="true"] span.bottom {
+#header .navbar-toggler.open span.bottom {
   transform: rotate(-45deg);
   margin: 0;
 }
