@@ -1,7 +1,7 @@
 $(function() {
 	wow = new WOW(
 		{
-			offset: 120
+			offset: 0
 		}
 	)
 	wow.init();
