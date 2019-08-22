@@ -25,7 +25,7 @@ $(document).ready(function () {
             menu = target;
         $target = $(target);
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - 95
+            'scrollTop': $target.offset().top - 90
         }, 500, 'swing', function () {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
@@ -55,11 +55,3 @@ $(function(){
          navMain.collapse('hide');
      });
  });
-
-
-
-$(document).ready(function(){
-	$('.navbar-toggler').click(function(){
-		$(this).toggleClass('open');
-	});
-});

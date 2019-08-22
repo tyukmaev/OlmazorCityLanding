@@ -235,26 +235,6 @@ sup {
 #header .navbar-toggler span.bottom {
   margin: 9px 0 0;
 }
-
-#header .navbar-toggler.open span.top {
-  transform: rotate(45deg);
-  margin: 0;
-}
-#header .navbar-toggler.open span.middle {
-  width: 0;
-}
-#header .navbar-toggler.open span.bottom {
-  transform: rotate(-45deg);
-  margin: 0;
-}
-
-
-
-
-
-
-
-
 @media (max-width: 991px) {
   #header a.phone {
     position: absolute;
@@ -272,7 +252,7 @@ sup {
     animation: shadow-pulse 1s infinite;
   }
   #header ul.nav {
-    padding: 0 0 20px;
+    padding: 0 0 40px;
   }
   #header ul.nav li a {
     display: block;
@@ -443,7 +423,23 @@ sup {
 
 
 
-#infra,
-#review {
-  height: 1000px;
+/*THESES*/
+
+#theses {
+  padding: 110px 0;
+  text-align: center;
+  background: #F7F8F3;
+}
+#theses .image {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+}
+#theses strong {
+  display: block;
+  width: 100%;
+  margin: 20px 0 60px;
+  font-size: 30px;
+  font-family: 'EuclidBold';
+  line-height: 38px;
 }
