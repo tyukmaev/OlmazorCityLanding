@@ -260,6 +260,15 @@ sup {
     line-height: 50px;
     font-size: 16px;
   }
+  #header ul.nav li:before {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: 25px 0 0 5px;
+    content: "";
+    background: #9BD219;
+  }
   #header ul.nav li a:before {
     display: none;
   }
@@ -442,4 +451,52 @@ sup {
   font-size: 30px;
   font-family: 'EuclidBold';
   line-height: 38px;
+}
+
+
+
+/*FORKIDS*/
+
+#forkids .col-md-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+#forkids .item {
+  float: left;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 110px;
+  background: #9BD219;
+  color: #FFF;
+}
+#forkids .item.second {
+  background: #97CE17;
+}
+#forkids .item img {
+  margin: 0 0 0 40px;
+}
+#forkids .item span {
+  display: block;
+  margin: 0 0 0 28px;
+  line-height: 20px;
+}
+#forkids .item .description {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 110px;
+  z-index: 5;
+  background: #47A14D;
+  font-size: 14px;
+  line-height: 22px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+#forkids .item .description span {
+  margin: 0 40px 0;
+}
+#forkids .item:hover .description {
+  opacity: 1;
 }
