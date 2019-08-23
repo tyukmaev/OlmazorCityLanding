@@ -55,3 +55,40 @@ $(function(){
          navMain.collapse('hide');
      });
  });
+
+
+
+$(function() {
+	$(".ds01").click(function(e) {
+		$(".ds01").toggleClass("opened");
+		$(".ds02, .ds03, .ds04, .ds05, .ds06, .ds07, .ds08").removeClass("opened");
+	});
+	$(".ds02").click(function(e) {
+		$(".ds02").toggleClass("opened");
+		$(".ds01, .ds03, .ds04, .ds05, .ds06, .ds07, .ds08").removeClass("opened");
+	});
+	$(".ds03").click(function(e) {
+		$(".ds03").toggleClass("opened");
+		$(".ds01, .ds02, .ds04, .ds05, .ds06, .ds07, .ds08").removeClass("opened");
+	});
+	$(".ds04").click(function(e) {
+		$(".ds04").toggleClass("opened");
+		$(".ds01, .ds03, .ds02, .ds05, .ds06, .ds07, .ds08").removeClass("opened");
+	});
+	$(".ds05").click(function(e) {
+		$(".ds05").toggleClass("opened");
+		$(".ds01, .ds03, .ds04, .ds02, .ds06, .ds07, .ds08").removeClass("opened");
+	});
+	$(".ds06").click(function(e) {
+		$(".ds06").toggleClass("opened");
+		$(".ds01, .ds03, .ds04, .ds05, .ds02, .ds07, .ds08").removeClass("opened");
+	});
+	$(".ds07").click(function(e) {
+		$(".ds07").toggleClass("opened");
+		$(".ds01, .ds03, .ds04, .ds05, .ds06, .ds02, .ds08").removeClass("opened");
+	});
+	$(".ds08").click(function(e) {
+		$(".ds08").toggleClass("opened");
+		$(".ds01, .ds03, .ds04, .ds05, .ds06, .ds07, .ds02").removeClass("opened");
+	});
+});

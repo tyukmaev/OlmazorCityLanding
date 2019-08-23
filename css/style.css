@@ -497,6 +497,9 @@ sup {
 #forkids .item .description span {
   margin: 0 40px 0;
 }
-#forkids .item:hover .description {
+#forkids .item .description.opened {
   opacity: 1;
+}
+#forkids .image {
+  overflow: hidden;
 }
