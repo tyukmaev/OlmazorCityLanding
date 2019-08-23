@@ -536,3 +536,9 @@ sup {
 #forkids .image {
   overflow: hidden;
 }
+#forkids .col-md-12 {
+  text-align: center;
+}
+#forkids a.btnline {
+  margin: 35px 0 80px;
+}
