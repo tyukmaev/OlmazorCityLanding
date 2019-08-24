@@ -469,9 +469,14 @@ sup {
   height: 110px;
   background: #9BD219;
   color: #FFF;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 #forkids .item.second {
   background: #97CE17;
+}
+#forkids .item:hover {
+  background: #47A14D;
 }
 #forkids .item img {
   margin: 0 0 0 40px;
@@ -541,4 +546,56 @@ sup {
 }
 #forkids a.btnline {
   margin: 35px 0 80px;
+}
+
+
+
+/*REVIEWS*/
+
+#reviews {
+  padding: 0 0 80px;
+  text-align: center;
+  background: #F7F8F3;
+}
+#reviews h2 span {
+  color: #47A14D;
+}
+
+
+
+/*GALLERY*/
+
+#gallery {
+  padding: 0 0 80px;
+  text-align: center;
+}
+#gallery .col-md-3 {
+  padding: 0;
+  background: #999;
+}
+#gallery a {
+  display: block;
+  height: 285px;
+  overflow: hidden;
+}
+#gallery a img {
+  width: 285px;
+  transition: all 0.3s;
+}
+#gallery a:hover img {
+  width: 305px;
+  margin: -10px 0 0 -10px;
+}
+#gallery a.btnline {
+  display: inline-block;
+  height: auto;
+  margin: 35px 0 0;
+}
+
+
+
+/*CONTACTS*/
+
+#contacts iframe {
+  border: none;
 }
